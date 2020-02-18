@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+    <style>
+        body{
+            padding: 100px;
+        }
+        .face{ 
+            position: relative;
+            width: 500px; 
+            height:500px; 
+            border-radius: 500px;
+            background: rgb(49, 31, 31); 
+            border: 1px solid black;
+        }
+        .nose{
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 240px;
+            left: 240px;
+            transition: .5s;
+            transform-origin: center center;
+        }
+        .eye{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 150px;
+        }
+
+        .left{
+            left: 120px;
+        }
+        .right{
+            right: 120px;
+        }
+
+        .mouth{
+            width: 300px;
+            height: 20px;
+            position: absolute;
+            border: 15px solid red;
+            border-width: 0 0 15px 0;
+            left: 100px;
+            top: 350px;
+            border-radius: 40%;
+            transition: .5s;
+
+        }
+
+        .nose:hover{
+            transform: scale(3,3)
+        }
+
+        .face:hover .mouth{
+            transform: rotate(180deg);
+        }
+        
+    </style>
+
+
+</head>
+    
+
+    <body>
+
+        <div class="face">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        
+    </body>    
+    
+    
+</html>
